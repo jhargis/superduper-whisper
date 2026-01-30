@@ -1,0 +1,64 @@
+/* Dracula Theme */
+/* Based on https://draculatheme.com */
+
+.dracula {
+  /* Backgrounds */
+  --background: #282a36;
+  --background-transparent: rgba(40, 42, 54, 0.95);
+  --background-elevated: #343746;
+  --background-hover: rgba(68, 71, 90, 0.95);
+  --background-subtle: rgba(0, 0, 0, 0.3);
+
+  /* Text colors */
+  --foreground: #f8f8f2;
+  --foreground-secondary: #f8f8f2;
+  --foreground-muted: #6272a4;
+  --foreground-dimmed: #6272a4;
+
+  /* Borders */
+  --border: #44475a;
+  --border-subtle: rgba(255, 255, 255, 0.1);
+  --border-hover: rgba(255, 255, 255, 0.2);
+
+  /* Primary/accent colors - Dracula purple */
+  --primary: #bd93f9;
+  --primary-hover: #caa8fc;
+
+  /* Status colors */
+  --status-recording: #ff5555;
+  --status-recording-bg: rgba(255, 85, 85, 0.2);
+  --status-recording-border: rgba(255, 85, 85, 0.4);
+  --status-success: #50fa7b;
+  --status-processing: #ffb86c;
+  --status-error: #ff5555;
+  --status-ready: #6272a4;
+
+  /* Button colors */
+  --btn-primary-bg: #50fa7b;
+  --btn-primary-hover: #69fb8f;
+  --btn-primary-text: #282a36;
+  --btn-secondary-bg: #44475a;
+  --btn-secondary-hover: #5a5e73;
+  --btn-secondary-border: #6272a4;
+  --btn-secondary-text: #f8f8f2;
+
+  /* Input colors */
+  --input-bg: #282a36;
+  --input-bg-readonly: #343746;
+  --input-border: #44475a;
+  --input-focus: #bd93f9;
+
+  /* Waveform */
+  --waveform-bg: rgba(0, 0, 0, 0.3);
+  --waveform-bar: #bd93f9;
+  --waveform-bar-recording: #ff5555;
+
+  /* Kbd/hotkey styling */
+  --kbd-bg: rgba(255, 255, 255, 0.1);
+  --kbd-border: rgba(255, 255, 255, 0.2);
+
+  /* Shadows */
+  --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.4), 0 1px 2px rgba(0, 0, 0, 0.3);
+  --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.4), 0 2px 4px -1px rgba(0, 0, 0, 0.3);
+  --shadow-lg: 0 4px 24px rgba(0, 0, 0, 0.4);
+}

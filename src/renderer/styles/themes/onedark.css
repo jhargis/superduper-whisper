@@ -1,0 +1,64 @@
+/* One Dark Theme */
+/* Based on Atom's One Dark theme */
+
+.onedark {
+  /* Backgrounds */
+  --background: #282c34;
+  --background-transparent: rgba(40, 44, 52, 0.95);
+  --background-elevated: #21252b;
+  --background-hover: rgba(55, 60, 70, 0.95);
+  --background-subtle: rgba(0, 0, 0, 0.3);
+
+  /* Text colors */
+  --foreground: #abb2bf;
+  --foreground-secondary: #9da5b4;
+  --foreground-muted: #5c6370;
+  --foreground-dimmed: #4b5263;
+
+  /* Borders */
+  --border: #3e4451;
+  --border-subtle: rgba(255, 255, 255, 0.1);
+  --border-hover: rgba(255, 255, 255, 0.2);
+
+  /* Primary/accent colors - One Dark blue */
+  --primary: #61afef;
+  --primary-hover: #528bcc;
+
+  /* Status colors */
+  --status-recording: #e06c75;
+  --status-recording-bg: rgba(224, 108, 117, 0.2);
+  --status-recording-border: rgba(224, 108, 117, 0.4);
+  --status-success: #98c379;
+  --status-processing: #e5c07b;
+  --status-error: #e06c75;
+  --status-ready: #5c6370;
+
+  /* Button colors */
+  --btn-primary-bg: #98c379;
+  --btn-primary-hover: #7cb668;
+  --btn-primary-text: #282c34;
+  --btn-secondary-bg: #3e4451;
+  --btn-secondary-hover: #4b5263;
+  --btn-secondary-border: #5c6370;
+  --btn-secondary-text: #abb2bf;
+
+  /* Input colors */
+  --input-bg: #282c34;
+  --input-bg-readonly: #2c313a;
+  --input-border: #3e4451;
+  --input-focus: #61afef;
+
+  /* Waveform */
+  --waveform-bg: rgba(0, 0, 0, 0.3);
+  --waveform-bar: #61afef;
+  --waveform-bar-recording: #e06c75;
+
+  /* Kbd/hotkey styling */
+  --kbd-bg: rgba(255, 255, 255, 0.1);
+  --kbd-border: rgba(255, 255, 255, 0.2);
+
+  /* Shadows */
+  --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.4), 0 1px 2px rgba(0, 0, 0, 0.3);
+  --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.4), 0 2px 4px -1px rgba(0, 0, 0, 0.3);
+  --shadow-lg: 0 4px 24px rgba(0, 0, 0, 0.4);
+}

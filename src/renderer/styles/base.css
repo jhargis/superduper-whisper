@@ -1,0 +1,76 @@
+/* Superduper Whisper - Base Theme Variables */
+/* This file defines all CSS custom properties used throughout the app */
+
+:root {
+  /* Default to dark theme */
+  --radius: 0.5rem;
+
+  /* Transition tokens */
+  --transition-fast: 150ms ease;
+  --transition-normal: 200ms ease;
+  --transition-slow: 300ms ease-out;
+}
+
+/* Dark theme (default) - matches original GitHub-inspired design */
+.dark,
+:root {
+  /* Backgrounds */
+  --background: #1e1e1e;
+  --background-transparent: rgba(30, 30, 30, 0.95);
+  --background-elevated: #252525;
+  --background-hover: rgba(50, 50, 50, 0.95);
+  --background-subtle: rgba(0, 0, 0, 0.3);
+
+  /* Text colors */
+  --foreground: #f0f6fc;
+  --foreground-secondary: #c9d1d9;
+  --foreground-muted: #8b949e;
+  --foreground-dimmed: #6e7681;
+
+  /* Borders */
+  --border: #333;
+  --border-subtle: rgba(255, 255, 255, 0.1);
+  --border-hover: rgba(255, 255, 255, 0.2);
+
+  /* Primary/accent colors */
+  --primary: #58a6ff;
+  --primary-hover: #79b8ff;
+
+  /* Status colors */
+  --status-recording: #f85149;
+  --status-recording-bg: rgba(248, 81, 73, 0.2);
+  --status-recording-border: rgba(248, 81, 73, 0.4);
+  --status-success: #3fb950;
+  --status-processing: #f0883e;
+  --status-error: #f85149;
+  --status-ready: #6e7681;
+
+  /* Button colors */
+  --btn-primary-bg: #238636;
+  --btn-primary-hover: #2ea043;
+  --btn-primary-text: white;
+  --btn-secondary-bg: #333;
+  --btn-secondary-hover: #444;
+  --btn-secondary-border: #444;
+  --btn-secondary-text: #c9d1d9;
+
+  /* Input colors */
+  --input-bg: #1e1e1e;
+  --input-bg-readonly: #2a2a2a;
+  --input-border: #333;
+  --input-focus: #58a6ff;
+
+  /* Waveform */
+  --waveform-bg: rgba(0, 0, 0, 0.3);
+  --waveform-bar: #58a6ff;
+  --waveform-bar-recording: #f85149;
+
+  /* Kbd/hotkey styling */
+  --kbd-bg: rgba(255, 255, 255, 0.1);
+  --kbd-border: rgba(255, 255, 255, 0.2);
+
+  /* Shadows */
+  --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.4), 0 1px 2px rgba(0, 0, 0, 0.3);
+  --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.4), 0 2px 4px -1px rgba(0, 0, 0, 0.3);
+  --shadow-lg: 0 4px 24px rgba(0, 0, 0, 0.4);
+}

@@ -1,0 +1,420 @@
+/* Superduper Whisper - Main Bar Styles */
+/* Minimal horizontal bar interface */
+
+/* Import base theme and themes */
+@import '../styles/base.css';
+@import '../styles/themes/light.css';
+@import '../styles/themes/dracula.css';
+@import '../styles/themes/nord.css';
+@import '../styles/themes/retro.css';
+@import '../styles/themes/monokai.css';
+@import '../styles/themes/synthwave.css';
+@import '../styles/themes/forest.css';
+@import '../styles/themes/onedark.css';
+@import '../styles/themes/gruvbox.css';
+@import '../styles/themes/sunset.css';
+@import '../styles/themes/catppuccin.css';
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+  background: transparent;
+  overflow: hidden;
+  user-select: none;
+  display: flex;
+}
+
+/* Collapse Handle */
+#collapse-handle {
+  position: relative;
+  width: 12px;
+  min-height: 48px;
+  background: var(--background-transparent);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border-radius: 8px 0 0 8px;
+  border: 1px solid var(--border-subtle);
+  border-right: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.2s;
+  -webkit-app-region: no-drag;
+  overflow: hidden;
+}
+
+#collapse-handle:hover {
+  background: var(--background-hover);
+}
+
+.handle-grip {
+  width: 3px;
+  height: 20px;
+  background: var(--border-hover);
+  border-radius: 2px;
+}
+
+#collapse-handle:hover .handle-grip {
+  background: var(--foreground-muted);
+}
+
+#main-bar {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  background: var(--background-transparent);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border-radius: 0 12px 12px 0;
+  padding: 8px 16px;
+  border: 1px solid var(--border-subtle);
+  border-left: none;
+  box-shadow: var(--shadow-lg);
+  -webkit-app-region: drag;
+  overflow: hidden;
+}
+
+/* Status Section */
+#status-section {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  min-width: 80px;
+}
+
+#status-icon {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: var(--status-ready);
+  transition: background 0.2s;
+}
+
+#status-icon.ready {
+  background: var(--status-ready);
+}
+
+#status-icon.recording {
+  background: var(--status-recording);
+  animation: pulse 1s ease-in-out infinite;
+}
+
+#status-icon.processing {
+  background: var(--status-processing);
+  animation: pulse 0.5s ease-in-out infinite;
+}
+
+#status-icon.success {
+  background: var(--status-success);
+}
+
+#status-icon.error {
+  background: var(--status-error);
+}
+
+@keyframes pulse {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.5; }
+}
+
+#status-text {
+  font-size: 13px;
+  font-weight: 500;
+  color: var(--foreground-secondary);
+  white-space: nowrap;
+  min-width: 70px; /* Prevents resize when text changes (fits "Processing") */
+}
+
+#running-cost {
+  font-size: 11px;
+  color: var(--foreground-dimmed);
+  font-variant-numeric: tabular-nums;
+  font-family: monospace;
+}
+
+/* Waveform Section */
+#waveform-section {
+  flex: 1;
+  min-width: 200px;
+  max-width: 400px;
+  height: 32px;
+  background: var(--waveform-bg);
+  border-radius: 6px;
+  overflow: hidden;
+}
+
+#waveform {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+/* Hotkeys Section */
+#hotkeys-section {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  -webkit-app-region: no-drag;
+}
+
+.hotkey-item {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.hotkey-icon {
+  color: var(--foreground-muted);
+  flex-shrink: 0;
+}
+
+.hotkey-label {
+  font-size: 12px;
+  color: var(--foreground-muted);
+}
+
+kbd {
+  font-family: inherit;
+  font-size: 11px;
+  padding: 2px 6px;
+  background: var(--kbd-bg);
+  border: 1px solid var(--kbd-border);
+  border-radius: 4px;
+  color: var(--foreground-secondary);
+  transition: all 0.2s ease;
+}
+
+/* Mic muted warning state */
+kbd.mic-muted {
+  color: var(--status-error, #f85149);
+  border-color: var(--status-error, #f85149);
+  background: rgba(248, 81, 73, 0.15);
+}
+
+.hotkey-icon.mic-muted {
+  color: var(--status-error, #f85149);
+}
+
+#status-text.mic-muted {
+  color: var(--status-error, #f85149);
+}
+
+#status-text.api-missing {
+  color: var(--status-warning, #d29922);
+}
+
+#status-text.flash {
+  animation: flash-warning 0.3s ease;
+}
+
+@keyframes flash-warning {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.3; }
+}
+
+#settings-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 28px;
+  height: 28px;
+  background: transparent;
+  border: none;
+  border-radius: 6px;
+  color: var(--foreground-muted);
+  cursor: pointer;
+  transition: all 0.2s;
+  -webkit-app-region: no-drag;
+}
+
+#settings-btn:hover {
+  background: var(--kbd-bg);
+  color: var(--foreground-secondary);
+}
+
+#settings-btn:focus {
+  outline: none;
+}
+
+/* Timer Badge */
+#timer-badge {
+  background: var(--status-recording-bg);
+  border: 1px solid var(--status-recording-border);
+  padding: 2px 8px;
+  border-radius: 6px;
+  font-size: 11px;
+  font-weight: 600;
+  color: var(--status-recording);
+  font-variant-numeric: tabular-nums;
+}
+
+#timer-badge.hidden {
+  display: none;
+}
+
+/* Hidden utility */
+.hidden {
+  display: none !important;
+}
+
+/* Recording state */
+body.recording #main-bar,
+body.recording #collapse-handle {
+  border-color: var(--status-recording-border);
+}
+
+/* Recording sweep effect */
+body.recording #main-bar::before,
+body.recording #collapse-handle::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(
+    90deg,
+    transparent 0%,
+    rgba(248, 81, 73, 0.08) 40%,
+    rgba(248, 81, 73, 0.15) 50%,
+    rgba(248, 81, 73, 0.08) 60%,
+    transparent 100%
+  );
+  background-size: 200% 100%;
+  animation: recording-sweep 2s ease-in-out infinite;
+  border-radius: inherit;
+  pointer-events: none;
+  z-index: 0;
+}
+
+@keyframes recording-sweep {
+  0% {
+    background-position: 200% 0;
+  }
+  100% {
+    background-position: -200% 0;
+  }
+}
+
+/* Processing state */
+body.processing #status-text {
+  color: var(--status-processing);
+}
+
+/* Paused state */
+body.paused #status-icon {
+  background: var(--status-processing);
+}
+
+body.paused #main-bar,
+body.paused #collapse-handle {
+  border-color: var(--status-processing);
+}
+
+/* Paused sweep effect - pulsing glow instead of sweep */
+body.paused #main-bar::before,
+body.paused #collapse-handle::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: radial-gradient(
+    ellipse at center,
+    rgba(240, 136, 62, 0.22) 0%,
+    rgba(240, 136, 62, 0.10) 50%,
+    transparent 70%
+  );
+  background-size: 100% 100%;
+  animation: paused-pulse 2s ease-in-out infinite;
+  border-radius: inherit;
+  pointer-events: none;
+  z-index: 0;
+}
+
+@keyframes paused-pulse {
+  0%, 100% {
+    opacity: 0.5;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 1;
+    transform: scale(1.02);
+  }
+}
+
+/* Mini View */
+body.mini #main-bar {
+  padding: 8px 12px;
+  gap: 8px;
+}
+
+body.mini #waveform-section,
+body.mini #hotkeys-section,
+body.mini #timer-badge,
+body.mini #running-cost {
+  display: none;
+}
+
+body.mini #status-section {
+  min-width: auto;
+}
+
+body.mini #collapse-handle {
+  border-radius: 8px 0 0 8px;
+}
+
+/* Error State - hide everything except status and settings */
+body.error-state #waveform-section,
+body.error-state #timer-badge,
+body.error-state #running-cost,
+body.error-state .hotkey-item:not(:last-child) {
+  display: none;
+}
+
+body.error-state #hotkeys-section {
+  min-width: auto;
+}
+
+body.error-state #status-text {
+  color: var(--status-error, #f85149);
+  white-space: nowrap;
+}
+
+/* Error details button - only visible in error state */
+#error-details-btn {
+  display: none;
+  align-items: center;
+  justify-content: center;
+  width: 22px;
+  height: 22px;
+  background: transparent;
+  border: 1px solid var(--status-error, #f85149);
+  border-radius: 4px;
+  color: var(--status-error, #f85149);
+  cursor: pointer;
+  transition: all 0.2s;
+  -webkit-app-region: no-drag;
+  margin-left: 8px;
+}
+
+#error-details-btn:hover {
+  background: rgba(248, 81, 73, 0.15);
+}
+
+body.error-state #error-details-btn {
+  display: flex;
+}
+
+body.error-state #main-bar,
+body.error-state #collapse-handle {
+  border-color: var(--status-error, #f85149);
+}

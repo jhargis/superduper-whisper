@@ -1,0 +1,63 @@
+/* Light Theme */
+
+.light {
+  /* Backgrounds */
+  --background: #ffffff;
+  --background-transparent: rgba(255, 255, 255, 0.95);
+  --background-elevated: #f6f8fa;
+  --background-hover: rgba(240, 240, 240, 0.95);
+  --background-subtle: rgba(0, 0, 0, 0.05);
+
+  /* Text colors */
+  --foreground: #1f2328;
+  --foreground-secondary: #24292f;
+  --foreground-muted: #57606a;
+  --foreground-dimmed: #8c959f;
+
+  /* Borders */
+  --border: #d0d7de;
+  --border-subtle: rgba(0, 0, 0, 0.1);
+  --border-hover: rgba(0, 0, 0, 0.2);
+
+  /* Primary/accent colors */
+  --primary: #0969da;
+  --primary-hover: #0550ae;
+
+  /* Status colors */
+  --status-recording: #cf222e;
+  --status-recording-bg: rgba(207, 34, 46, 0.15);
+  --status-recording-border: rgba(207, 34, 46, 0.4);
+  --status-success: #1a7f37;
+  --status-processing: #9a6700;
+  --status-error: #cf222e;
+  --status-ready: #8c959f;
+
+  /* Button colors */
+  --btn-primary-bg: #1f883d;
+  --btn-primary-hover: #1a7f37;
+  --btn-primary-text: white;
+  --btn-secondary-bg: #f6f8fa;
+  --btn-secondary-hover: #f3f4f6;
+  --btn-secondary-border: #d0d7de;
+  --btn-secondary-text: #24292f;
+
+  /* Input colors */
+  --input-bg: #ffffff;
+  --input-bg-readonly: #f6f8fa;
+  --input-border: #d0d7de;
+  --input-focus: #0969da;
+
+  /* Waveform */
+  --waveform-bg: rgba(0, 0, 0, 0.05);
+  --waveform-bar: #0969da;
+  --waveform-bar-recording: #cf222e;
+
+  /* Kbd/hotkey styling */
+  --kbd-bg: rgba(0, 0, 0, 0.05);
+  --kbd-border: rgba(0, 0, 0, 0.1);
+
+  /* Shadows */
+  --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.1), 0 1px 2px rgba(0, 0, 0, 0.06);
+  --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  --shadow-lg: 0 4px 24px rgba(0, 0, 0, 0.15);
+}

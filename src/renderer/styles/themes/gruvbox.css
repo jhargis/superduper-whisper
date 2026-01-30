@@ -1,0 +1,64 @@
+/* Gruvbox Theme */
+/* Based on the Gruvbox color scheme */
+
+.gruvbox {
+  /* Backgrounds */
+  --background: #282828;
+  --background-transparent: rgba(40, 40, 40, 0.95);
+  --background-elevated: #3c3836;
+  --background-hover: rgba(60, 56, 54, 0.95);
+  --background-subtle: rgba(0, 0, 0, 0.3);
+
+  /* Text colors */
+  --foreground: #ebdbb2;
+  --foreground-secondary: #d5c4a1;
+  --foreground-muted: #928374;
+  --foreground-dimmed: #7c6f64;
+
+  /* Borders */
+  --border: #504945;
+  --border-subtle: rgba(255, 255, 255, 0.1);
+  --border-hover: rgba(255, 255, 255, 0.2);
+
+  /* Primary/accent colors - Gruvbox yellow */
+  --primary: #fabd2f;
+  --primary-hover: #d79921;
+
+  /* Status colors */
+  --status-recording: #fb4934;
+  --status-recording-bg: rgba(251, 73, 52, 0.2);
+  --status-recording-border: rgba(251, 73, 52, 0.4);
+  --status-success: #b8bb26;
+  --status-processing: #fe8019;
+  --status-error: #fb4934;
+  --status-ready: #7c6f64;
+
+  /* Button colors */
+  --btn-primary-bg: #b8bb26;
+  --btn-primary-hover: #98971a;
+  --btn-primary-text: #282828;
+  --btn-secondary-bg: #504945;
+  --btn-secondary-hover: #665c54;
+  --btn-secondary-border: #7c6f64;
+  --btn-secondary-text: #ebdbb2;
+
+  /* Input colors */
+  --input-bg: #282828;
+  --input-bg-readonly: #3c3836;
+  --input-border: #504945;
+  --input-focus: #fabd2f;
+
+  /* Waveform */
+  --waveform-bg: rgba(0, 0, 0, 0.3);
+  --waveform-bar: #fabd2f;
+  --waveform-bar-recording: #fb4934;
+
+  /* Kbd/hotkey styling */
+  --kbd-bg: rgba(255, 255, 255, 0.1);
+  --kbd-border: rgba(255, 255, 255, 0.2);
+
+  /* Shadows */
+  --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.4), 0 1px 2px rgba(0, 0, 0, 0.3);
+  --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.4), 0 2px 4px -1px rgba(0, 0, 0, 0.3);
+  --shadow-lg: 0 4px 24px rgba(0, 0, 0, 0.4);
+}

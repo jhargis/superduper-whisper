@@ -1,0 +1,64 @@
+/* Monokai Theme */
+/* Classic code editor theme */
+
+.monokai {
+  /* Backgrounds */
+  --background: #272822;
+  --background-transparent: rgba(39, 40, 34, 0.95);
+  --background-elevated: #3e3d32;
+  --background-hover: rgba(73, 72, 62, 0.95);
+  --background-subtle: rgba(0, 0, 0, 0.3);
+
+  /* Text colors */
+  --foreground: #f8f8f2;
+  --foreground-secondary: #f8f8f2;
+  --foreground-muted: #75715e;
+  --foreground-dimmed: #75715e;
+
+  /* Borders */
+  --border: #49483e;
+  --border-subtle: rgba(255, 255, 255, 0.1);
+  --border-hover: rgba(255, 255, 255, 0.2);
+
+  /* Primary/accent colors - Monokai pink */
+  --primary: #f92672;
+  --primary-hover: #fa4d8a;
+
+  /* Status colors */
+  --status-recording: #f92672;
+  --status-recording-bg: rgba(249, 38, 114, 0.2);
+  --status-recording-border: rgba(249, 38, 114, 0.4);
+  --status-success: #a6e22e;
+  --status-processing: #e6db74;
+  --status-error: #f92672;
+  --status-ready: #75715e;
+
+  /* Button colors */
+  --btn-primary-bg: #a6e22e;
+  --btn-primary-hover: #b8e84d;
+  --btn-primary-text: #272822;
+  --btn-secondary-bg: #3e3d32;
+  --btn-secondary-hover: #49483e;
+  --btn-secondary-border: #75715e;
+  --btn-secondary-text: #f8f8f2;
+
+  /* Input colors */
+  --input-bg: #272822;
+  --input-bg-readonly: #3e3d32;
+  --input-border: #49483e;
+  --input-focus: #66d9ef;
+
+  /* Waveform */
+  --waveform-bg: rgba(0, 0, 0, 0.3);
+  --waveform-bar: #66d9ef;
+  --waveform-bar-recording: #f92672;
+
+  /* Kbd/hotkey styling */
+  --kbd-bg: rgba(255, 255, 255, 0.1);
+  --kbd-border: rgba(255, 255, 255, 0.2);
+
+  /* Shadows */
+  --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.4), 0 1px 2px rgba(0, 0, 0, 0.3);
+  --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.4), 0 2px 4px -1px rgba(0, 0, 0, 0.3);
+  --shadow-lg: 0 4px 24px rgba(0, 0, 0, 0.4);
+}

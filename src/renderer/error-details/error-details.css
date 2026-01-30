@@ -1,0 +1,97 @@
+/* Error Details Window Styles */
+/* Import base theme and themes */
+@import '../styles/base.css';
+@import '../styles/themes/light.css';
+@import '../styles/themes/dracula.css';
+@import '../styles/themes/nord.css';
+@import '../styles/themes/retro.css';
+@import '../styles/themes/monokai.css';
+@import '../styles/themes/synthwave.css';
+@import '../styles/themes/forest.css';
+@import '../styles/themes/onedark.css';
+@import '../styles/themes/gruvbox.css';
+@import '../styles/themes/sunset.css';
+@import '../styles/themes/catppuccin.css';
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+  background: var(--background);
+  color: var(--foreground);
+  overflow: hidden;
+}
+
+#error-container {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  overflow: hidden;
+  background: var(--background);
+}
+
+#header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 12px 16px;
+  background: var(--background-elevated);
+  border-bottom: 1px solid var(--border);
+  -webkit-app-region: drag;
+}
+
+#header h2 {
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--foreground);
+}
+
+#close-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 28px;
+  height: 28px;
+  background: transparent;
+  border: none;
+  border-radius: 6px;
+  color: var(--foreground-muted);
+  cursor: pointer;
+  transition: all 0.2s;
+  -webkit-app-region: no-drag;
+}
+
+#close-btn:hover {
+  background: var(--background-hover);
+  color: var(--status-error);
+}
+
+#content {
+  flex: 1;
+  padding: 16px;
+  overflow: auto;
+  background: var(--background);
+}
+
+#error-text {
+  font-family: 'SF Mono', 'Monaco', 'Consolas', 'Liberation Mono', 'Courier New', monospace;
+  font-size: 12px;
+  line-height: 1.5;
+  color: var(--foreground-secondary);
+  white-space: pre-wrap;
+  word-wrap: break-word;
+  background: var(--background-elevated);
+  padding: 12px;
+  border-radius: 6px;
+  border: 1px solid var(--border);
+}

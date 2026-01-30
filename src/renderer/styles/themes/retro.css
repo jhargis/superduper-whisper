@@ -1,0 +1,79 @@
+/* Retro Theme */
+/* Cyberpunk neon green on black terminal aesthetic */
+
+.retro {
+  /* Backgrounds - Pure black */
+  --background: #000000;
+  --background-transparent: rgba(0, 0, 0, 0.95);
+  --background-elevated: #0a0a0a;
+  --background-hover: rgba(20, 20, 20, 0.95);
+  --background-subtle: rgba(0, 255, 65, 0.05);
+
+  /* Text colors - Neon green */
+  --foreground: #00ff41;
+  --foreground-secondary: #00ff41;
+  --foreground-muted: #00cc33;
+  --foreground-dimmed: #008822;
+
+  /* Borders - Neon green */
+  --border: #00ff41;
+  --border-subtle: rgba(0, 255, 65, 0.3);
+  --border-hover: rgba(0, 255, 65, 0.5);
+
+  /* Primary/accent colors - Neon green */
+  --primary: #00ff41;
+  --primary-hover: #33ff66;
+
+  /* Status colors */
+  --status-recording: #ff0040;
+  --status-recording-bg: rgba(255, 0, 64, 0.2);
+  --status-recording-border: rgba(255, 0, 64, 0.5);
+  --status-success: #00ff41;
+  --status-processing: #ffff00;
+  --status-error: #ff0040;
+  --status-ready: #008822;
+
+  /* Button colors */
+  --btn-primary-bg: #00ff41;
+  --btn-primary-hover: #33ff66;
+  --btn-primary-text: #000000;
+  --btn-secondary-bg: #0a0a0a;
+  --btn-secondary-hover: #1a1a1a;
+  --btn-secondary-border: #00ff41;
+  --btn-secondary-text: #00ff41;
+
+  /* Input colors */
+  --input-bg: #000000;
+  --input-bg-readonly: #0a0a0a;
+  --input-border: #00ff41;
+  --input-focus: #00ff41;
+
+  /* Waveform */
+  --waveform-bg: rgba(0, 255, 65, 0.1);
+  --waveform-bar: #00ff41;
+  --waveform-bar-recording: #ff0040;
+
+  /* Kbd/hotkey styling */
+  --kbd-bg: rgba(0, 255, 65, 0.1);
+  --kbd-border: rgba(0, 255, 65, 0.4);
+
+  /* Shadows - Neon glow effect */
+  --shadow-sm: 0 0 5px rgba(0, 255, 65, 0.3);
+  --shadow-md: 0 0 10px rgba(0, 255, 65, 0.4);
+  --shadow-lg: 0 0 20px rgba(0, 255, 65, 0.5);
+}
+
+/* Retro theme: Force hard edges (no border-radius) */
+.retro,
+.retro * {
+  border-radius: 0 !important;
+}
+
+/* Retro theme: Use monospace font everywhere */
+.retro {
+  font-family: 'Courier New', Courier, monospace !important;
+}
+
+.retro * {
+  font-family: inherit !important;
+}

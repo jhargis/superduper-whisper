@@ -1,0 +1,64 @@
+/* Synthwave Theme */
+/* 80s neon aesthetic with hot pink and cyan */
+
+.synthwave {
+  /* Backgrounds - Deep purple/black */
+  --background: #1a1025;
+  --background-transparent: rgba(26, 16, 37, 0.95);
+  --background-elevated: #261b36;
+  --background-hover: rgba(50, 35, 70, 0.95);
+  --background-subtle: rgba(255, 126, 219, 0.1);
+
+  /* Text colors */
+  --foreground: #f0e6ff;
+  --foreground-secondary: #e8d5ff;
+  --foreground-muted: #b48ead;
+  --foreground-dimmed: #8a6f99;
+
+  /* Borders */
+  --border: #4a3660;
+  --border-subtle: rgba(255, 126, 219, 0.2);
+  --border-hover: rgba(255, 126, 219, 0.4);
+
+  /* Primary/accent colors - Hot pink */
+  --primary: #ff7edb;
+  --primary-hover: #ff9de4;
+
+  /* Status colors */
+  --status-recording: #ff3860;
+  --status-recording-bg: rgba(255, 56, 96, 0.2);
+  --status-recording-border: rgba(255, 56, 96, 0.4);
+  --status-success: #72f1b8;
+  --status-processing: #fede5d;
+  --status-error: #ff3860;
+  --status-ready: #8a6f99;
+
+  /* Button colors */
+  --btn-primary-bg: #ff7edb;
+  --btn-primary-hover: #ff9de4;
+  --btn-primary-text: #1a1025;
+  --btn-secondary-bg: #261b36;
+  --btn-secondary-hover: #3a2850;
+  --btn-secondary-border: #ff7edb;
+  --btn-secondary-text: #f0e6ff;
+
+  /* Input colors */
+  --input-bg: #1a1025;
+  --input-bg-readonly: #261b36;
+  --input-border: #4a3660;
+  --input-focus: #36f9f6;
+
+  /* Waveform */
+  --waveform-bg: rgba(255, 126, 219, 0.1);
+  --waveform-bar: #36f9f6;
+  --waveform-bar-recording: #ff3860;
+
+  /* Kbd/hotkey styling */
+  --kbd-bg: rgba(255, 126, 219, 0.15);
+  --kbd-border: rgba(255, 126, 219, 0.3);
+
+  /* Shadows - Neon glow */
+  --shadow-sm: 0 1px 5px rgba(255, 126, 219, 0.2);
+  --shadow-md: 0 4px 10px rgba(255, 126, 219, 0.25);
+  --shadow-lg: 0 4px 24px rgba(255, 126, 219, 0.3);
+}

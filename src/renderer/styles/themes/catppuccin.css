@@ -1,0 +1,64 @@
+/* Catppuccin Mocha Theme */
+/* Soothing pastel theme for the high-spirited */
+
+.catppuccin {
+  /* Backgrounds */
+  --background: #1e1e2e;
+  --background-transparent: rgba(30, 30, 46, 0.95);
+  --background-elevated: #313244;
+  --background-hover: rgba(49, 50, 68, 0.95);
+  --background-subtle: rgba(0, 0, 0, 0.3);
+
+  /* Text colors */
+  --foreground: #cdd6f4;
+  --foreground-secondary: #bac2de;
+  --foreground-muted: #a6adc8;
+  --foreground-dimmed: #6c7086;
+
+  /* Borders */
+  --border: #45475a;
+  --border-subtle: rgba(255, 255, 255, 0.1);
+  --border-hover: rgba(255, 255, 255, 0.2);
+
+  /* Primary/accent colors - Catppuccin mauve */
+  --primary: #cba6f7;
+  --primary-hover: #b4befe;
+
+  /* Status colors */
+  --status-recording: #f38ba8;
+  --status-recording-bg: rgba(243, 139, 168, 0.2);
+  --status-recording-border: rgba(243, 139, 168, 0.4);
+  --status-success: #a6e3a1;
+  --status-processing: #f9e2af;
+  --status-error: #f38ba8;
+  --status-ready: #6c7086;
+
+  /* Button colors */
+  --btn-primary-bg: #a6e3a1;
+  --btn-primary-hover: #94e2d5;
+  --btn-primary-text: #1e1e2e;
+  --btn-secondary-bg: #45475a;
+  --btn-secondary-hover: #585b70;
+  --btn-secondary-border: #6c7086;
+  --btn-secondary-text: #cdd6f4;
+
+  /* Input colors */
+  --input-bg: #1e1e2e;
+  --input-bg-readonly: #313244;
+  --input-border: #45475a;
+  --input-focus: #cba6f7;
+
+  /* Waveform */
+  --waveform-bg: rgba(0, 0, 0, 0.3);
+  --waveform-bar: #cba6f7;
+  --waveform-bar-recording: #f38ba8;
+
+  /* Kbd/hotkey styling */
+  --kbd-bg: rgba(255, 255, 255, 0.1);
+  --kbd-border: rgba(255, 255, 255, 0.2);
+
+  /* Shadows */
+  --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.4), 0 1px 2px rgba(0, 0, 0, 0.3);
+  --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.4), 0 2px 4px -1px rgba(0, 0, 0, 0.3);
+  --shadow-lg: 0 4px 24px rgba(0, 0, 0, 0.4);
+}

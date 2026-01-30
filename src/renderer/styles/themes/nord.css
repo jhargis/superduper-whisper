@@ -1,0 +1,64 @@
+/* Nord Theme */
+/* Based on https://www.nordtheme.com */
+
+.nord {
+  /* Backgrounds - Polar Night */
+  --background: #2e3440;
+  --background-transparent: rgba(46, 52, 64, 0.95);
+  --background-elevated: #3b4252;
+  --background-hover: rgba(67, 76, 94, 0.95);
+  --background-subtle: rgba(0, 0, 0, 0.2);
+
+  /* Text colors - Snow Storm */
+  --foreground: #eceff4;
+  --foreground-secondary: #e5e9f0;
+  --foreground-muted: #d8dee9;
+  --foreground-dimmed: #8a919c;
+
+  /* Borders */
+  --border: #4c566a;
+  --border-subtle: rgba(255, 255, 255, 0.1);
+  --border-hover: rgba(255, 255, 255, 0.15);
+
+  /* Primary/accent colors - Frost blue */
+  --primary: #88c0d0;
+  --primary-hover: #8fbcbb;
+
+  /* Status colors - Aurora */
+  --status-recording: #bf616a;
+  --status-recording-bg: rgba(191, 97, 106, 0.2);
+  --status-recording-border: rgba(191, 97, 106, 0.4);
+  --status-success: #a3be8c;
+  --status-processing: #ebcb8b;
+  --status-error: #bf616a;
+  --status-ready: #8a919c;
+
+  /* Button colors */
+  --btn-primary-bg: #a3be8c;
+  --btn-primary-hover: #b4c99a;
+  --btn-primary-text: #2e3440;
+  --btn-secondary-bg: #3b4252;
+  --btn-secondary-hover: #434c5e;
+  --btn-secondary-border: #4c566a;
+  --btn-secondary-text: #eceff4;
+
+  /* Input colors */
+  --input-bg: #2e3440;
+  --input-bg-readonly: #3b4252;
+  --input-border: #4c566a;
+  --input-focus: #88c0d0;
+
+  /* Waveform */
+  --waveform-bg: rgba(0, 0, 0, 0.2);
+  --waveform-bar: #88c0d0;
+  --waveform-bar-recording: #bf616a;
+
+  /* Kbd/hotkey styling */
+  --kbd-bg: rgba(255, 255, 255, 0.08);
+  --kbd-border: rgba(255, 255, 255, 0.15);
+
+  /* Shadows */
+  --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.3), 0 1px 2px rgba(0, 0, 0, 0.2);
+  --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.3), 0 2px 4px -1px rgba(0, 0, 0, 0.2);
+  --shadow-lg: 0 4px 24px rgba(0, 0, 0, 0.35);
+}
